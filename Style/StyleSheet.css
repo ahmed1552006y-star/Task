@@ -1,0 +1,160 @@
+  * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: black;
+      padding: 400px 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ToDoList {
+          padding: 50px 50px;
+          background-color: white;
+          border-radius: 30px;
+          border: none;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          h3 {
+              font-size: 32px;
+              font-family: "Inter", sans-serif;
+          }
+
+          p {
+              color: rgba(0, 0, 0, 0.295);
+              font-family: "Inter", sans-serif;
+          }
+
+          .Search {
+              display: flex;
+              gap: 30px;
+
+              .AddTaskName {
+                  display: flex;
+              }
+
+              .AddTaskDesc {
+                  display: flex;
+              }
+
+              button {
+
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 40px;
+                  height: 40px;
+
+                  border: none;
+                  border-radius: 4px;
+                  color: white;
+                  background-color: black;
+              }
+
+              input {
+                  font-size: 20px;
+                  width: 600px;
+                  height: 40px;
+                  border: 1px solid black;
+                  border-radius: 4px;
+              }
+          }
+
+          .TaskList {
+              margin-top: 20px;
+              list-style: none;
+              font-size: 30px;
+              padding: 0 10px;
+              border: 1px solid #E5E7EB;
+              border-radius: 20px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              li {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 16px 20px;
+                  gap: 15px;
+                  border-bottom: 1px solid #E5E7EB;
+                  font-family: "Inter", sans-serif;
+                  font-size: 16px;
+                  color: #111827;
+                  background-color: #ffffff;
+
+                  &:last-child {
+                      border-bottom: none;
+                  }
+
+                  .DeleteBtn {
+                      background-color: transparent;
+                      border: none;
+                      color: #ef4444;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 8px;
+                      border-radius: 6px;
+                      transition: 0.2s;
+                  }
+
+                  .DeleteBtn:hover {
+                      background-color: #dbeafe;
+
+                  }
+
+
+                  .update-btn {
+                      background-color: transparent;
+                      border: none;
+                      color: #3b82f6;
+
+                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 8px;
+                      border-radius: 6px;
+                      transition: 0.2s;
+                  }
+
+                  .update-btn:hover {
+                      background-color: #dbeafe;
+
+                  }
+
+
+                  input[type="checkbox"] {
+                      width: 20px;
+                      height: 20px;
+                      cursor: pointer;
+                      accent-color: #4F46E5;
+                      border: 1.5px solid #D1D5DB;
+                      border-radius: 6px;
+                      display: flex;
+                      justify-content: center;
+                      background-color: #F9FAFB;
+                  }
+
+                  input[type="checkbox"]:checked {
+                      background-color: #4F46E5;
+                      border-color: #4F46E5;
+                      appearance: auto;
+                  }
+
+
+
+
+
+
+              }
+          }
+      }
+  }

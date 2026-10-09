@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/StyleSheet.css">
+</head>
+
+<body>
+    <div class="ToDoList">
+
+        <h3> To Do List >> </h3>
+
+        <p> Manage your tasks with state and event handling </p>
+
+
+
+        <div class="Search">
+            <div class="AddTaskName">
+
+                <input type="text" placeholder="Add a new task...">
+
+
+
+
+            </div>
+
+            <div class="AddTaskDesc">
+
+                <input type="text" placeholder="Add Descripion...">
+
+
+                <button onclick="addtask()" id="AddTaskDesc">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M12 20v-8m0 0V4m0 8h8m-8 0H4" />
+                    </svg>
+                </button>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <ul class="TaskList">
+        </ul>
+
+
+    </div>
+
+
+
+
+
+    <script src="./Scripts/Script.js"></script>
+</body>
+
+</html>
